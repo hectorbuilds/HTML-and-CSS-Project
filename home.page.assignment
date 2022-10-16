@@ -1,0 +1,7 @@
+DOCTYPE
+<html lang="en">
+	<title> hector </title>
+		<meta charset="utf-8">
+		<p>"Hello, world!"</p>
+		<a href="dog.html">Home</a>
+</html>
