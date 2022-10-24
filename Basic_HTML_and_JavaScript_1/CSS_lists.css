@@ -1,0 +1,18 @@
+ol {
+	list-style-type: upper-roman;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size: 5em;
+	font-family: Georgia;
+	text-shadow: 40px 0px 60px;
+}
+ul {
+	list-style-type: square;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size: 5em;
+	font-family: Georgia;
+	text-shadow: 40px 0px 60px;
+}
