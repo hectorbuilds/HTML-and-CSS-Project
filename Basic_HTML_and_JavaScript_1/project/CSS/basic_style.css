@@ -8,10 +8,10 @@ h1 {
 }
 .container {
     width: 450px;
-    height: 450;
+    height: 450px;
     background-color: #faebd7;
     border: 2px solid black;
-    border-radius: 54;
+    border-radius: 5%;
 }
 /*---------------------------------------------
     SELECT ALL SQUARES IN THE ARRAY 
@@ -34,7 +34,7 @@ h1 {
 -----------------------------------------------*/
 .squares:nth-child(-n+4) p{
     font-family :"Helvetica Neue",Helvetica, Arial, sans-serif;
-    font-size: 1.cm;
+    font-size: 1.5em;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -85,10 +85,10 @@ h1 {
 -----------------------------------------------*/
 @keyframes race {
     0%, 100% {
-        transform: translateY{0px};
-        background-image:url("../images/Thumb/Icons/icons.png")
+        transform: translateY(0px);
+        background-image:url("../images/Thumb/Icons/icons2.png")
     }
     50% {
-        transform: translate(330px);
+        transform: translateY(330px);
     }
 }
