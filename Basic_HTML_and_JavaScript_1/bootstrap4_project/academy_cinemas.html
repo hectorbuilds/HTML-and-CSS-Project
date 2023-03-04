@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Academy Cinemas</title>
+  
   </head>
   <body>
     <div class="container">
@@ -120,58 +121,80 @@
               </div>
             </div>
           </div>
-
-------------------------
-          <div class="card">
-                <img src="./Img/kongskullisland.jpg" class="card-img-top" alt="Kong Skull Island">
-                <div class="card-body">
-                    <h5 class="card-title">Kong: Skull Island</h5>
-                    <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden </p>
-                </div>
-                <span class="badge badge-pill badge-info">12:00 p.m.</span>
-                <span class="badge badge-pill badge-info">1:30 p.m.</span>
-                <span class="badge badge-pill badge-info">3:00 p.m.</span>
-                <span class="badge badge-pill badge-info">5:30 p.m.</span>
-                <span class="badge badge-pill badge-info">7:00 p.m.</span>
-                <span class="badge badge-pill badge-info">9:30 p.m.</span>
-          </div>
-          <div class="card">
-            <img src="./Img/ghostintheshell.jpg" class="card-img-top" alt="Ghost In The Shell">
-            <div class="card-body">
-                <h5 class="card-title">Ghost In The Shell</h5>
-                <p class="card-text">An action drama about...</p>
-            </div>
-            <span class="badge badge-pill badge-info">12:00 p.m.</span>
-            <span class="badge badge-pill badge-info">1:30 p.m.</span>
-            <span class="badge badge-pill badge-info">3:00 p.m.</span>
-            <span class="badge badge-pill badge-info">5:30 p.m.</span>
-            <span class="badge badge-pill badge-info">7:00 p.m.</span>
-            <span class="badge badge-pill badge-info">9:30 p.m.</span>
-            </div>
-            <div class="card">
-                <img src="./Img/beautyandthebeast.jpg" class="card-img-top" alt="Beauty And The Beast">
-                <div class="card-body">
-                    <h5 class="card-title">Beauty And The Beast</h5>
-                    <p class="card-text">An action drama about... </p>
-                </div>
-                <span class="badge badge-pill badge-info">12:00 p.m.</span>
-                <span class="badge badge-pill badge-info">1:30 p.m.</span>
-                <span class="badge badge-pill badge-info">3:00 p.m.</span>
-                <span class="badge badge-pill badge-info">5:30 p.m.</span>
-                <span class="badge badge-pill badge-info">7:00 p.m.</span>
-                <span class="badge badge-pill badge-info">9:30 p.m.</span>
-          </div>
-
-
-          <!--/Showtimes-->
+          <!--/Sign up button-->
           <div class="text-center">
                 <form>
                     <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
+                    <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email for rewards">
+                      Sign Up
+                    </button>
                     <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>  
           </div>
+
+          <!--Jumbotron heading-->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+              <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+                  Movie Deals</h1>
+                  <p class="lead">Check out our monthly deals...</p>
+                  <!--Movie Deals-->
+                  <button type="button" class="btn btn-primary" class="btn btn-success" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+                  <!--/movie deals-->
+              </div>
+          </div>
+          
+          <!-- Form Modal-->
+              <div class="modal" tabindex="-1" role="dialog" id="register">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Register to receive movie deals</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">First Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Last Name</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                        
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect2">Email</label>
+                          <select multiple class="form-control" id="exampleFormControlSelect2">
+                          
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Password</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </form>
+
+
+
+
+
+
+
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           <div class="container my-5">
                 <ul class="nav nav-inline">
                     <h2 id="deals"></h2>
@@ -192,11 +215,24 @@
 
           </div>
 
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>NEW MOVIES EVERY FRIDAY!</p>
+            <hr>
+            <p class="mb-0">FREE COKE WITH THE PURCHASE OF TWO TICKETS</p>
+          </div>
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+    </script>
   </body>
 </html>
